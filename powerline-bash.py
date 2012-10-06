@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
 import os
@@ -100,6 +100,9 @@ def add_hg_segment(powerline, cwd):
         fg = 0
     powerline.append(Segment(powerline, ' %s ' % branch, fg, bg))
     return True
+def add_rvm_segment(powerline):
+    # TODO
+    pass
 
 def get_git_status():
     has_pending_commits = True
